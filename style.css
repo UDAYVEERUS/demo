@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+  }
+  
+  .container {
+    /* max-width: 800px; */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  h4{
+    text-align: center;
+    color: green;
+    font-size: larger;
+  }
+  
+  form {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .steps-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .step {
+    flex: 1;
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 10px;
+  }
+  
+  .step h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+  }
+  
+  .step p {
+    color: #666;
+  }
+  .logo {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 150px;
+  }
+  /* Add responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    form label {
+      font-size: 16px;
+    }
+  
+    input, button {
+      font-size: 14px;
+    }
+  
+    .steps-container {
+      flex-direction: column;
+    }
+  
+    .step {
+      max-width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
+ 
