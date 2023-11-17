@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show From Data</title>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="name" placeholder="Enter your name" />
+        <select name="" id="gender">
+            <option value="male">Male</option>
+            <option value="female">FeMale</option>
+            <option value="other">other</option>
+        </select>
+        <button onclick="registerFunction()">Register</button>
+
+        <h2 id="showname"></h2>
+        <h2 id="showgender"></h2>
+    </div>
+</body>
+<script>
+    function registerFunction() {
+
+        const name = document.getElementById("name").value;
+        const gender = document.getElementById("gender").value
+        console.log(name, "25")
+        console.log(gender, "26")
+        localStorage.setItem("Name : ", name)
+        localStorage.setItem("Gender : ", gender)
+        document.getElementById("showname").innerText = name
+        document.getElementById("showgender").innerText = gender
+    }
+</script>
+
+</html>
